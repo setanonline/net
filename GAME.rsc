@@ -1,5 +1,12 @@
 # sep/30/2020 17:09:43 by RouterOS 6.47.3
 # CREATED BY=SETANONLINE
+
+/ip firewall address-list
+add address=192.0.0.0/8 list=local
+add address=192.0.0.0/8 list="LOKAL C"
+add address=172.0.0.0/8 list="LOKAL C"
+add address=10.10.0.0/16 list="LOKAL C"
+
 /ip firewall raw
 add action=add-dst-to-address-list address-list="IP GAME ONLINE" address-list-timeout=\
     1h chain=prerouting comment="ML-FF update 14 mei" dst-address-list=\
