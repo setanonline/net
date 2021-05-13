@@ -1,1 +1,1 @@
-/sys scr add name=uu source="/export file name=gg.rsc"
+/sys scr export file name="fx.rsc"
